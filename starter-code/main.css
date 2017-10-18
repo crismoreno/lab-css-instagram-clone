@@ -10,6 +10,10 @@ html{
   -moz-box-sizing: border-box;
 }
 
+/*div{
+  border: 1px solid black;
+}*/
+
 *:before, *, *:after {
   box-sizing: inherit;
   -webkit-box-sizing: inherit;
@@ -21,39 +25,85 @@ body {
   margin: 0;
 }
 
-.blue{
-background-image: url(bgtile/phones.png);
-
+.background{
+  background: url("images/bgtile.png");
+  width: 100%;
+  background-repeat: repeat;
+  position: absolute;
+  height: 290px;
+  z-index: -1;
 }
+
 
 .container {
 float: right;
+position: absolute;
+top: 52%;
+right: 21%;
+z-index: 10;
+}
+
+.login-button{
+  float: right;
+  background: blue;
+  height: 60px;
+  width: 150px;
+  psoition: absolute;
+  top: 200px;
+  right: 500px;
+  z-index: 10;
 }
 
 .iphones{
   float: left;
   position: absolute;
-  top: 100px;
-  left: 100px;
-
-
+  top: 34%;
+  left: 20%;
 }
 
 .brand{
+  position: relative;
+  bottom: 45px;
+  right: 40px;
 }
 
 .frame{
+  position: absolute;
+  top: 72%;
+  right: 17%;
+  z-index: -1;
+}
+
+.button-home{
+  width: 112px;
+  height: 48px;
+  position: absolute;
+  bottom: 96%;
+  left: 84%;
+  font-family: "Helvetica Neue", sans-serif;
+  padding-left: 39px;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #1c5380 00%, white 1000%);
+  box-shadow: 0px 0px 1px black;
 
 }
 
 .home{
+  position: relative;
+  left: 40px;
+  bottom: 73px;
 
 }
 
 h1 {
   color: #06365f;
-  font-weight: 400;
-  line-height: 35px;
+  font-weight: 600;
+  line-height: 28px;
+  font-size: 1.2em;
 }
 
 p{
@@ -65,14 +115,35 @@ p{
 }
 
 .googlestore{
+  margin-left: 20px;
 
 }
 
 .footer{
   display: inline;
+  clear: both;
+  position: absolute;
+  top: 223%;
+  left: 26%;
+  width: 60%;
+  color: #1c5380;
+  font-size: 0.7em;
 
 }
 
 h3 {
+  display: inline;
+  width: 50px;
+  text-transform: uppercase;
+}
 
+.footer h3{
+   margin-left: 17px;
+}
+
+.footer h4{
+  position: relative;
+  bottom: 33px;
+  left: 572px;
+  color: #D5D5D5;
 }
